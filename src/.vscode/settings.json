@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/abdelrhaman/robot_torpedo/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/abdelrhaman/ros/build/my_robot_controller",
+        "/home/abdelrhaman/ros/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/abdelrhaman/robot_torpedo/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/abdelrhaman/ros/build/my_robot_controller",
+        "/home/abdelrhaman/ros/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
