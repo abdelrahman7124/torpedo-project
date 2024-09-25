@@ -36,6 +36,9 @@ class UI(QMainWindow):
 
         self.task_windows = {}
 
+        
+
+
     # Generic method to open any UI window by passing the file name
     def openTaskUI(self, ui_file):
         task_window = QMainWindow()
@@ -47,12 +50,12 @@ class UI(QMainWindow):
 
     # Code for the video stream in the main window
     def startVideoStream(self):
-        ip_camera_url = "http://192.168.1.22:8080/video"
+        ip_camera_url = "http://192.168.1.3:8080/video"
         self.capture = cv2.VideoCapture(ip_camera_url)
 
         self.timer = QtCore.QTimer(self)
         self.timer.timeout.connect(self.updateFrame)
-        self.timer.start(30)
+        self.timer.start(15)
 
     def updateFrame(self):
         ret, frame = self.capture.read()
