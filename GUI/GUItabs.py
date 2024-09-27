@@ -9,7 +9,16 @@ import sys
 from PyQt5 import uic
 import cv2
 from LineFollower import process_frame 
-from trydet import process_shape_detection
+from Shape_detect import process_shape_detection
+
+
+
+circle_count = 0
+square_count = 0
+triangle_count = 0
+Red_count = 0
+
+
 class UI(QMainWindow):
     def __init__(self):
         super(UI, self).__init__()
@@ -20,12 +29,21 @@ class UI(QMainWindow):
         self.cameraVideo = self.findChild(QLabel, "Live_camera_videoLable")
         self.cameraVideoimg_pross = self.findChild(QLabel, "Live_camera_videoLable2")  # For grayscale video
 
-        self.frameLogs_Task1 = self.findChild(QTextEdit, "textEdit_LogsTask1")  # Assuming it's a QTextEdit
+        self.frameLogs_Task1 = self.findChild(QTextEdit, "textEdit_LogsTask1")  
+        self.frameLogs_Task2 = self.findChild(QTextEdit, "textEdit_LogsTask2")  
+
 
         self.detectShapeButton = self.findChild(QPushButton, "detectShapeButton")
         self.detectShapeButton.clicked.connect(self.detectShapes)  # Connect button to shape detection
 
+        self.Show_res_task2_bouns_push = self.findChild(QPushButton, "Show_res_task2_bouns_push")
+        self.Show_res_task2_bouns_push.clicked.connect(self.showTask2bouns)
+
+
         self.cameraVideoimg_pross_Metal = self.findChild(QLabel, "Live_camera_videoLable2_Metal")  # For grayscale video
+
+
+
 
         # Start the video stream
         self.startVideoStream()
@@ -48,8 +66,7 @@ class UI(QMainWindow):
             
             # Display the control signal in the console (optional)
             #print(control_signal)
-            self.appendLog(f"Control Signal: {control_signal}")
-
+            self.appendLog(f"Control Signal: {control_signal}", self.frameLogs_Task1)
 
             self.displayFrameInLabel(processed_frame, self.cameraVideoimg_pross)
             # Convert the original frame to RGB
@@ -71,8 +88,19 @@ class UI(QMainWindow):
 
 
 
+    def showTask2bouns(self):
+        self.appendLog(
+                "----------------------------------\n"
+                f"Number of Circles: {circle_count},\n "
+                f"Number of Squares: {square_count},\n "
+                f"Number of Triangles: {triangle_count}\n"
+                "----------------------------------",
+                self.frameLogs_Task2)
+        
+
 
     def detectShapes(self):
+        global circle_count, square_count, triangle_count  # Declare global variables
         ret, frame = self.capture.read()
         if ret:
             processed_frame, shape_count, shape_names = process_shape_detection(frame)
@@ -81,16 +109,30 @@ class UI(QMainWindow):
             self.displayFrameInLabel(frame_rgb, self.cameraVideoimg_pross_Metal)
 
             print(f"Detected {shape_count} shapes: {', '.join(shape_names)}")
-            #self.appendLog(f"Detected {shape_count} shapes")
+            self.appendLog(f"Detected {shape_count} shapes: {', '.join(shape_names)}", self.frameLogs_Task2)
+
+        if shape_count == 1:
+            for shape in shape_names:
+                if shape == "circle":
+                    circle_count += 1
+                elif shape == "sq":
+                    square_count += 1
+                elif shape == "triangle":
+                    triangle_count += 1
+
+            
+            print(f"Number of Circles: {circle_count}, "
+                  f"Number of Squares: {square_count}, "
+                  f"Number of Triangles: {triangle_count}")
 
 
 
-
-    def appendLog(self, log_text):
-        if self.frameLogs_Task1:  # Check if the widget is found
-            self.frameLogs_Task1.append(log_text)  # Append log to QTextEdit
+    def appendLog(self, log_text, log_frame):
+        if log_frame:  # Check if the widget is found
+            log_frame.append(log_text)  # Append log to QTextEdit
         else:
-            print("Log frame (frameLogs_Task1) not found")
+            print("Log frame not found")
+
 
             
     def closeEvent(self, event):
