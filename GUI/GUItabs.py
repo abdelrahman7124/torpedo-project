@@ -9,7 +9,7 @@ import sys
 from PyQt5 import uic
 import cv2
 from LineFollower import process_frame 
-from Shape_detect import process_shape_detection
+from tryed import process_shape_detection
 
 
 
@@ -17,6 +17,11 @@ circle_count = 0
 square_count = 0
 triangle_count = 0
 Red_count = 0
+Green_count = 0
+Blue_count = 0
+Yellow_count = 0
+White_count = 0
+Black_count = 0
 Station_Shape=""
 Cuurent_Shape=""
 
@@ -100,11 +105,18 @@ class UI(QMainWindow):
 
     def showTask2bouns(self):
         self.appendLog(
-                "----------------------------------\n"
-                f"Number of Circles: {circle_count},\n "
-                f"Number of Squares: {square_count},\n "
+                "----------Shapes------------\n"
+                f"Number of Circles: {circle_count},\n"
+                f"Number of Squares: {square_count},\n"
                 f"Number of Triangles: {triangle_count}\n"
-                "----------------------------------",
+                "----------Colors----------------\n",
+                f"Number of Red: {Red_count},\n"
+                f"Number of Green: {Green_count},\n"
+                f"Number of Blue: {Blue_count},\n"
+                f"Number of Yellow: {Yellow_count},\n"
+                f"Number of White: {White_count},\n"
+                f"Number of Black: {Black_count}\n",
+                "--------------------------------\n",
                 self.frameLogs_Task2)
         
     def SetStation_Shape(self):
@@ -122,20 +134,28 @@ class UI(QMainWindow):
             self.appendLog("Not Home! -- The current shape is not the station shape", self.frameLogs_Task2)
 
     def detectShapes(self):
-        global circle_count, square_count, triangle_count ,Cuurent_Shape  # Declare global variables
+        global circle_count, square_count, triangle_count ,Cuurent_Shape  
+        global Red_count, Green_count, Blue_count, Yellow_count, White_count, Black_count
         ret, frame = self.capture.read()
         if ret:
-            processed_frame, shape_count, shape_names = process_shape_detection(frame)
+            processed_frame, shape_count, shape_names ,shapes_color = process_shape_detection(frame)
             # Display the processed frame
             frame_rgb = cv2.cvtColor(processed_frame, cv2.COLOR_BGR2RGB)
             self.displayFrameInLabel(frame_rgb, self.cameraVideoimg_pross_Metal)
 
-            print(f"Detected {shape_count} shapes: {', '.join(shape_names)}")
-            self.appendLog(f"Detected {shape_count} shapes: {', '.join(shape_names)}", self.frameLogs_Task2)
+            shapes_with_colors = [f"{color} {shape}" for shape, color in zip(shape_names, shapes_color)]
+        
+        # Log the detected shapes and their count
+            print(f"Detected {shape_count} shapes: {', '.join(shapes_with_colors)}")
+            self.appendLog(f"Detected {shape_count} shapes: {', '.join(shapes_with_colors)}", self.frameLogs_Task2)
 
+            """print(f"Detected {shape_count} shapes: {', '.join(shape_names)}")
+            self.appendLog(f"Detected {shape_count} shapes: {', '.join(shape_names)}", self.frameLogs_Task2)
+            """
         if shape_count == 1:
             Cuurent_Shape= shape_names[0]
-            for shape in shape_names:
+            for shape, color in zip(shape_names, shapes_color):
+                # Count shapes
                 if shape == "circle":
                     circle_count += 1
                 elif shape == "sq":
@@ -143,11 +163,33 @@ class UI(QMainWindow):
                 elif shape == "triangle":
                     triangle_count += 1
 
+                # Count colors
+                if color == "Red":
+                    Red_count += 1
+                elif color == "Green":
+                    Green_count += 1
+                elif color == "Blue":
+                    Blue_count += 1
+                elif color == "Yellow":
+                    Yellow_count += 1
+                elif color == "White":
+                    White_count += 1
+                elif color == "Black":
+                    Black_count += 1
+            
+
             
             print(f"Number of Circles: {circle_count}, "
                   f"Number of Squares: {square_count}, "
                   f"Number of Triangles: {triangle_count}")
-
+            
+            print(f"Number of Red: {Red_count}, "
+                  f"Number of Green: {Green_count}, "
+                  f"Number of Blue: {Blue_count}, "
+                  f"Number of Yellow: {Yellow_count}, "
+                  f"Number of White: {White_count}, "
+                  f"Number of Black: {Black_count}")
+            
 
 
     def appendLog(self, log_text, log_frame):

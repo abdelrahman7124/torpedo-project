@@ -33,7 +33,7 @@
      <enum>QTabWidget::North</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="documentMode">
      <bool>false</bool>
@@ -521,7 +521,7 @@ background-color: rgb(45,45,85)</string>
        <string>detect Shape</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="ADD_path_lable_6">
+     <widget class="QPushButton" name="detectColorButton">
       <property name="geometry">
        <rect>
         <x>600</x>
