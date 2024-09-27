@@ -26,7 +26,7 @@ class UI(QMainWindow):
         self.startVideoStream()
 
     def startVideoStream(self):
-        ip_camera_url = "http://192.168.1.8:8080/video"
+        ip_camera_url = "http://192.168.1.4:8080/video"
         self.capture = cv2.VideoCapture(ip_camera_url)
 
         self.timer = QTimer(self)
