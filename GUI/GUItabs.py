@@ -17,6 +17,8 @@ circle_count = 0
 square_count = 0
 triangle_count = 0
 Red_count = 0
+Station_Shape=""
+Cuurent_Shape=""
 
 
 class UI(QMainWindow):
@@ -38,6 +40,14 @@ class UI(QMainWindow):
 
         self.Show_res_task2_bouns_push = self.findChild(QPushButton, "Show_res_task2_bouns_push")
         self.Show_res_task2_bouns_push.clicked.connect(self.showTask2bouns)
+
+
+
+        self.Set_st_task2_push = self.findChild(QPushButton, "Set_st_task2_push")
+        self.Set_st_task2_push.clicked.connect(self.SetStation_Shape)
+
+        self.Match_st_task2_push = self.findChild(QPushButton, "Match_st_task2_push")
+        self.Match_st_task2_push.clicked.connect(self.CheckStation_Shape)
 
 
         self.cameraVideoimg_pross_Metal = self.findChild(QLabel, "Live_camera_videoLable2_Metal")  # For grayscale video
@@ -97,10 +107,22 @@ class UI(QMainWindow):
                 "----------------------------------",
                 self.frameLogs_Task2)
         
+    def SetStation_Shape(self):
+        global Station_Shape, Cuurent_Shape
+        Station_Shape= Cuurent_Shape
 
+
+    def CheckStation_Shape(self):
+        global Station_Shape, Cuurent_Shape
+        if Station_Shape == Cuurent_Shape:
+            #print("The current shape is the station shape")
+            self.appendLog("Find Home! -- The current shape is the station shape", self.frameLogs_Task2)
+        else:
+            #print("The current shape is not the station shape")
+            self.appendLog("Not Home! -- The current shape is not the station shape", self.frameLogs_Task2)
 
     def detectShapes(self):
-        global circle_count, square_count, triangle_count  # Declare global variables
+        global circle_count, square_count, triangle_count ,Cuurent_Shape  # Declare global variables
         ret, frame = self.capture.read()
         if ret:
             processed_frame, shape_count, shape_names = process_shape_detection(frame)
@@ -112,6 +134,7 @@ class UI(QMainWindow):
             self.appendLog(f"Detected {shape_count} shapes: {', '.join(shape_names)}", self.frameLogs_Task2)
 
         if shape_count == 1:
+            Cuurent_Shape= shape_names[0]
             for shape in shape_names:
                 if shape == "circle":
                     circle_count += 1

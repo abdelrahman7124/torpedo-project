@@ -337,7 +337,7 @@ background-color: rgb(45,45,85)</string>
        <string>TextLabel</string>
       </property>
      </widget>
-     <widget class="QLabel" name="img_liveCam_Metal">
+     <widget class="QLabel" name="Image_processing_res">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -356,7 +356,7 @@ background-color: rgb(45,45,85)</string>
        <number>2</number>
       </property>
       <property name="text">
-       <string>image processing LIVE Cam</string>
+       <string>image processing Results</string>
       </property>
       <property name="textFormat">
        <enum>Qt::AutoText</enum>
@@ -409,9 +409,9 @@ background-color: rgb(45,45,85)</string>
       <property name="geometry">
        <rect>
         <x>500</x>
-        <y>150</y>
+        <y>130</y>
         <width>341</width>
-        <height>141</height>
+        <height>161</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -426,7 +426,7 @@ background-color: rgb(45,45,85)</string>
          <x>0</x>
          <y>0</y>
          <width>339</width>
-         <height>139</height>
+         <height>159</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -451,8 +451,8 @@ background-color: rgb(45,45,85)</string>
      <widget class="QPushButton" name="Start_lable_2">
       <property name="geometry">
        <rect>
-        <x>610</x>
-        <y>30</y>
+        <x>600</x>
+        <y>20</y>
         <width>101</width>
         <height>31</height>
        </rect>
@@ -468,7 +468,7 @@ background-color: rgb(45,45,85)</string>
       <property name="geometry">
        <rect>
         <x>500</x>
-        <y>130</y>
+        <y>110</y>
         <width>341</width>
         <height>21</height>
        </rect>
@@ -493,7 +493,7 @@ background-color: rgb(45,45,85)</string>
       <property name="geometry">
        <rect>
         <x>500</x>
-        <y>30</y>
+        <y>20</y>
         <width>101</width>
         <height>31</height>
        </rect>
@@ -509,7 +509,7 @@ background-color: rgb(45,45,85)</string>
       <property name="geometry">
        <rect>
         <x>500</x>
-        <y>70</y>
+        <y>50</y>
         <width>101</width>
         <height>31</height>
        </rect>
@@ -524,8 +524,8 @@ background-color: rgb(45,45,85)</string>
      <widget class="QPushButton" name="ADD_path_lable_6">
       <property name="geometry">
        <rect>
-        <x>610</x>
-        <y>70</y>
+        <x>600</x>
+        <y>50</y>
         <width>101</width>
         <height>31</height>
        </rect>
@@ -540,8 +540,8 @@ background-color: rgb(45,45,85)</string>
      <widget class="QPushButton" name="Show_res_task2_bouns_push">
       <property name="geometry">
        <rect>
-        <x>720</x>
-        <y>70</y>
+        <x>700</x>
+        <y>50</y>
         <width>101</width>
         <height>31</height>
        </rect>
@@ -551,6 +551,38 @@ background-color: rgb(45,45,85)</string>
       </property>
       <property name="text">
        <string>Show Results</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Set_st_task2_push">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>80</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 116, 116)</string>
+      </property>
+      <property name="text">
+       <string>Set the station</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Match_st_task2_push">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>80</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 116, 116)</string>
+      </property>
+      <property name="text">
+       <string>Match</string>
       </property>
      </widget>
     </widget>
