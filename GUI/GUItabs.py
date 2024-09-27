@@ -9,7 +9,7 @@ import sys
 from PyQt5 import uic
 import cv2
 from LineFollower import process_frame 
-from tryed import process_shape_detection
+from Shape_detect import process_shape_detection
 
 
 
