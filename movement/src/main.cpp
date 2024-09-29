@@ -2,10 +2,15 @@
 #include <micro_ros_arduino.h>
 #include <std_msgs/msg/float32.h>
 #include <std_msgs/msg/string.h>
+#include <Wifi.h>
 
+const char *ssid = "wifi name";   // name to be changed
+const char *password =  "password";  // password to be changed
 
-#define leftMotor 14         
-#define rightMotor 15       
+#define leftMotor_neg 33
+#define leftMotor_pos 15
+#define rightMotor_neg 14
+#define rightMotor_pos 5
 #define imu_sensor 8       
 
 rcl_publisher_t publisher;   
@@ -23,13 +28,15 @@ std_msgs__msg__Float32 movement_msg_left;
 std_msgs__msg__Float32 movement_msg_right;
 std_msgs__msg__String movement_msg_direction;
 
-float left_speed=0.0;
-float right_speed=0.0;
-string direction = "stop";
+int left_speed=0;
+int right_speed=0;
+String direction = "stop";
 
 void setup() {
-    pinMode(leftMotor, OUTPUT);   
-    pinMode(rightMotor, OUTPUT);  
+    pinMode(leftMotor_neg, OUTPUT);
+    pinMode(leftMotor_pos, OUTPUT);
+    pinMode(rightMotor_neg, OUTPUT);
+    pinMode(rightMotor_pos, OUTPUT);  
     pinMode(imu_sensor, INPUT);   
     set_microros_transports();  
     rcl_allocator_t allocator = rcl_get_default_allocator();  
@@ -37,7 +44,7 @@ void setup() {
     rclc_support_init(&support, 0, NULL, &allocator);  
 
     rcl_node_t node;  
-    rclc_node_init_default(&node, "imu_data", "", &support);
+    rclc_node_init_default(&node, "data", "", &support);
     //publishers
     rclc_publisher_init_default(&publisher,&node,ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32),"imu_data");  
 
@@ -62,18 +69,19 @@ void setup() {
 
 void motor_left_speed_callback(const void * msgin){
   movement_msg_left = *(const std_msgs__msg__Float32 *)msgin;
-  left_speed = movement_msg_left.data;
+  left_speed = (int)movement_msg_left.data;
 }
 
 void motor_right_speed_callback(const void * msgin){
   movement_msg_right = *(const std_msgs__msg__Float32 *)msgin;
-  right_speed = movement_msg_right.data;
+  right_speed = (int)movement_msg_right.data;
 }
 
 void motor_direction_callback(const void *msgin){
   movement_msg_direction = *(const std_msgs__msg__String *)msgin;
-  direvtion = movement_msg_direction.data
+  direction = movement_msg_direction.data;
 }
+
 
 
 void loop() {
@@ -86,50 +94,55 @@ void loop() {
     msg.data = sensor_value;
     rcl_publish(&publisher, &msg, NULL); 
   }
-  //move according to received speed and direction
   if(direction == "forward"){
-    moveforward();
+    moveforward(left_speed, right_speed);
   }
   else if(direction == "backward"){
-    movebackward();
+    movebackward(left_speed, right_speed);
   }
   else if(direction == "left"){
-    turnleft();
+    turnleft(left_speed, right_speed);
   }
   else if(direction == "right"){
-    turnright();
+    turnright(left_speed, right_speed);
   }
   else if(direction == "stop"){
     stop();
   }
-
 }
 
 
-void moveforward(){
-  digitalWrite(leftMotor, HIGH);
-  digitalWrite(rightMotor, HIGH);
+void moveforward(int left,int right){
+  analogWrite(leftMotor_neg, 0);
+  analogWrite(leftMotor_pos, left);
+  analogWrite(rightMotor_neg, 0);
+  analogWrite(rightMotor_pos, right);
 }
 
-void movebackward(){
-  digitalWrite(leftMotor, LOW);
-  digitalWrite(rightMotor, LOW);
+void movebackward(int left,int right){
+  analogWrite(leftMotor_neg, left);
+  analogWrite(leftMotor_pos, 0);
+  analogWrite(rightMotor_neg, right);
+  analogWrite(rightMotor_pos, 0);
 }
 
-void turnleft(){
-  digitalWrite(leftMotor, LOW);
-  digitalWrite(rightMotor, HIGH);
+void turnleft(int left,int right){
+  analogWrite(leftMotor_neg, 0);
+  analogWrite(leftMotor_pos, left/4);
+  analogWrite(rightMotor_neg, 0);
+  analogWrite(rightMotor_pos, right);
 }
 
-void turnright(){
-  digitalWrite(leftMotor, HIGH);
-  digitalWrite(rightMotor, LOW);
+void turnright(int left,int right){
+  analogWrite(leftMotor_neg, left);
+  analogWrite(leftMotor_pos, 0);
+  analogWrite(rightMotor_neg, right/4);
+  analogWrite(rightMotor_pos, 0);
 }
 
 void stop(){
-  digitalWrite(leftMotor, LOW);
-  digitalWrite(rightMotor, LOW);
+  analogWrite(leftMotor_neg, 0);
+  analogWrite(leftMotor_pos, 0);
+  analogWrite(rightMotor_neg, 0);
+  analogWrite(rightMotor_pos, 0);
 }
-
-
-
