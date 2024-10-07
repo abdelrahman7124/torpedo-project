@@ -1,0 +1,9 @@
+{
+  "package_name": "action_msgs",
+  "non_idl_tuples": [
+    "/home/abdelrhaman/microros_ws/src/ros2/rcl_interfaces/action_msgs:msg/GoalInfo.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/rcl_interfaces/action_msgs:msg/GoalStatus.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/rcl_interfaces/action_msgs:msg/GoalStatusArray.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/rcl_interfaces/action_msgs:srv/CancelGoal.srv"
+  ]
+}

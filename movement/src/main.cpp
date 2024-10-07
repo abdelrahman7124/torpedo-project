@@ -69,9 +69,9 @@ void setup() {
     rclc_publisher_init_default(&publisher,&node,ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32),"imu_data");  
 
     //subscribers
-    rclc_subscription_init_default(&subscriber_left, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, movement_msg_left, Float32), "motor_left_speed");
-    rclc_subscription_init_default(&subscriber_right, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, movement_msg_right, Float32), "motor_right_speed");
-    rclc_subscription_init_default(&subscriber_direction, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, movement_msg_direction, String), "motor_direction");
+    rclc_subscription_init_default(&subscriber_left, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32), "motor_left_speed");
+    rclc_subscription_init_default(&subscriber_right, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32), "motor_right_speed");
+    rclc_subscription_init_default(&subscriber_direction, &node, ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String), "motor_direction");
 
     rclc_executor_t executor;
     rclc_executor_init(&executor, &support.context, 3, &allocator);
@@ -92,9 +92,10 @@ void motor_right_speed_callback(const void * msgin){
   right_speed = (int)movement_msg_right.data;
 }
 
-void motor_direction_callback(const void *msgin){
-  movement_msg_direction = *(const std_msgs__msg__String *)msgin;
-  direction = (string)movement_msg_direction.data;
+void motor_direction_callback(const void *msgin) {
+    movement_msg_direction = *(const std_msgs__msg__String *)msgin;
+    std::string direction_str(movement_msg_direction.data.data);  
+    direction = direction_str.c_str();  
 }
 
 

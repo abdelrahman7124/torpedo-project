@@ -1,0 +1,33 @@
+{
+  "package_name": "sensor_msgs",
+  "non_idl_tuples": [
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/BatteryState.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/CameraInfo.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/ChannelFloat32.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/CompressedImage.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/FluidPressure.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/Illuminance.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/Image.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/Imu.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/JointState.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/Joy.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/JoyFeedback.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/JoyFeedbackArray.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/LaserEcho.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/LaserScan.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/MagneticField.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/MultiDOFJointState.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/MultiEchoLaserScan.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/NavSatFix.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/NavSatStatus.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/PointCloud.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/PointCloud2.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/PointField.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/Range.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/RegionOfInterest.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/RelativeHumidity.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/Temperature.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:msg/TimeReference.msg",
+    "/home/abdelrhaman/microros_ws/src/ros2/common_interfaces/sensor_msgs:srv/SetCameraInfo.srv"
+  ]
+}

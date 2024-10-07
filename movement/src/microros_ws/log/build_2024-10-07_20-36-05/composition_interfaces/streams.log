@@ -1,0 +1,242 @@
+[0.008s] Invoking command in '/home/abdelrhaman/microros_ws/build/composition_interfaces': AMENT_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:/home/abdelrhaman/ros/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/lib:/home/abdelrhaman/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abdelrhaman/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/abdelrhaman/microros_ws/src/ros2/rcl_interfaces/composition_interfaces -DCMAKE_INSTALL_PREFIX=/home/abdelrhaman/microros_ws/install/composition_interfaces
+[0.020s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.114s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.116s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.117s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.136s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.152s] -- Found rcl_interfaces: 1.2.1 (/home/abdelrhaman/microros_ws/install/rcl_interfaces/share/rcl_interfaces/cmake)
+[0.419s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.583s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.809s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.834s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.856s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.857s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.857s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.891s] -- Configuring done
+[0.947s] -- Generating done
+[0.950s] -- Build files have been written to: /home/abdelrhaman/microros_ws/build/composition_interfaces
+[0.956s] Invoked command in '/home/abdelrhaman/microros_ws/build/composition_interfaces' returned '0': AMENT_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:/home/abdelrhaman/ros/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/lib:/home/abdelrhaman/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abdelrhaman/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/abdelrhaman/microros_ws/src/ros2/rcl_interfaces/composition_interfaces -DCMAKE_INSTALL_PREFIX=/home/abdelrhaman/microros_ws/install/composition_interfaces
+[0.958s] Invoking command in '/home/abdelrhaman/microros_ws/build/composition_interfaces': AMENT_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:/home/abdelrhaman/ros/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/lib:/home/abdelrhaman/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abdelrhaman/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abdelrhaman/microros_ws/build/composition_interfaces -- -j20 -l20
+[0.992s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_generator_c[0m
+[1.000s] [  2%] Built target composition_interfaces__cpp
+[1.003s] [ 12%] Built target composition_interfaces__rosidl_generator_c
+[1.008s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.009s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.010s] [ 17%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.010s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.011s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_typesupport_fastrtps_c[0m
+[1.015s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_typesupport_introspection_c[0m
+[1.017s] [ 17%] Built target ament_cmake_python_copy_composition_interfaces
+[1.022s] [ 27%] Built target composition_interfaces__rosidl_typesupport_introspection_cpp
+[1.024s] [ 38%] Built target composition_interfaces__rosidl_typesupport_introspection_c
+[1.025s] [ 48%] Built target composition_interfaces__rosidl_typesupport_fastrtps_c
+[1.025s] [ 59%] Built target composition_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.334s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_typesupport_c[0m
+[1.339s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_typesupport_cpp[0m
+[1.346s] [ 65%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/composition_interfaces/srv/list_nodes__type_support.cpp.o[0m
+[1.346s] [ 65%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/composition_interfaces/srv/load_node__type_support.cpp.o[0m
+[1.346s] [ 65%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/composition_interfaces/srv/unload_node__type_support.cpp.o[0m
+[1.350s] [ 68%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/composition_interfaces/srv/load_node__type_support.cpp.o[0m
+[1.350s] [ 70%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/composition_interfaces/srv/unload_node__type_support.cpp.o[0m
+[1.353s] [ 72%] [32mBuilding CXX object CMakeFiles/composition_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/composition_interfaces/srv/list_nodes__type_support.cpp.o[0m
+[1.381s] [ 74%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_c.so[0m
+[1.425s] [ 74%] Built target composition_interfaces__rosidl_typesupport_c
+[1.492s] running egg_info
+[1.539s] writing composition_interfaces.egg-info/PKG-INFO
+[1.583s] writing dependency_links to composition_interfaces.egg-info/dependency_links.txt
+[1.629s] [ 76%] [32m[1mLinking CXX shared library libcomposition_interfaces__rosidl_typesupport_cpp.so[0m
+[1.752s] [ 76%] Built target composition_interfaces__rosidl_typesupport_cpp
+[1.801s] [ 76%] Built target composition_interfaces
+[1.856s] [ 78%] Built target composition_interfaces__py
+[1.884s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_generator_py[0m
+[1.912s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/libcomposition_interfaces__rosidl_generator_py.so[0m
+[2.029s] [ 87%] Built target composition_interfaces__rosidl_generator_py
+[2.052s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.069s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[2.070s] [35m[1mConsolidate compiler generated dependencies of target composition_interfaces__rosidl_typesupport_c__pyext[0m
+[2.078s] writing top-level names to composition_interfaces.egg-info/top_level.txt
+[2.080s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.094s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.099s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.176s] [ 95%] Built target composition_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.184s] [ 97%] Built target composition_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.205s] [100%] Built target composition_interfaces__rosidl_typesupport_c__pyext
+[2.208s] reading manifest file 'composition_interfaces.egg-info/SOURCES.txt'
+[2.213s] writing manifest file 'composition_interfaces.egg-info/SOURCES.txt'
+[2.297s] [100%] Built target ament_cmake_python_build_composition_interfaces_egg
+[2.309s] Invoked command in '/home/abdelrhaman/microros_ws/build/composition_interfaces' returned '0': AMENT_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:/home/abdelrhaman/ros/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/lib:/home/abdelrhaman/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abdelrhaman/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/abdelrhaman/microros_ws/build/composition_interfaces -- -j20 -l20
+[2.384s] Invoking command in '/home/abdelrhaman/microros_ws/build/composition_interfaces': AMENT_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:/home/abdelrhaman/ros/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/lib:/home/abdelrhaman/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abdelrhaman/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abdelrhaman/microros_ws/build/composition_interfaces
+[2.389s] -- Install configuration: ""
+[2.390s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/ament_index/resource_index/rosidl_interfaces/composition_interfaces
+[2.390s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[2.390s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__functions.h
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__struct.h
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__functions.h
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__functions.h
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__type_support.h
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__functions.c
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__type_support.h
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__struct.h
+[2.391s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__functions.c
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__functions.c
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__struct.h
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__type_support.h
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/unload_node.h
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/list_nodes.h
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/load_node.h
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/library_path.sh
+[2.392s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/library_path.dsv
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_c.so
+[2.392s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_fastrtps_c.h
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_fastrtps_c.h
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_fastrtps_c.h
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[2.393s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__type_support.c
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__type_support.c
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_introspection_c.h
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_introspection_c.h
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_introspection_c.h
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__type_support.c
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so
+[2.394s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_c.so
+[2.394s] -- Set runtime path of "/home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_c.so" to ""
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[2.394s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__struct.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__builder.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__struct.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__traits.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__traits.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__traits.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__struct.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__builder.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__builder.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/load_node.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/unload_node.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/list_nodes.hpp
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[2.395s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_fastrtps_cpp.hpp
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_fastrtps_cpp.hpp
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_fastrtps_cpp.hpp
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/dds_fastrtps
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__rosidl_typesupport_introspection_cpp.hpp
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/unload_node__type_support.cpp
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__rosidl_typesupport_introspection_cpp.hpp
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/load_node__type_support.cpp
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__type_support.cpp
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/include/composition_interfaces/composition_interfaces/srv/detail/list_nodes__rosidl_typesupport_introspection_cpp.hpp
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.396s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_cpp.so
+[2.396s] -- Set runtime path of "/home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.396s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/pythonpath.sh
+[2.396s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/pythonpath.dsv
+[2.397s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info
+[2.397s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/PKG-INFO
+[2.397s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/SOURCES.txt
+[2.397s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/top_level.txt
+[2.397s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces-1.2.1-py3.10.egg-info/dependency_links.txt
+[2.397s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces
+[2.397s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_c.c
+[2.397s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.397s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.397s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv
+[2.397s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_load_node.py
+[2.397s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_unload_node.py
+[2.397s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_load_node_s.c
+[2.398s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/__init__.py
+[2.398s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_list_nodes_s.c
+[2.398s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_list_nodes.py
+[2.398s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv/_unload_node_s.c
+[2.398s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.398s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_microxrcedds_c.c
+[2.398s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.398s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/libcomposition_interfaces__rosidl_generator_py.so
+[2.398s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/_composition_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.398s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so
+[2.398s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/__init__.py
+[2.420s] Listing '/home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces'...
+[2.420s] Compiling '/home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/__init__.py'...
+[2.420s] Listing '/home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/srv'...
+[2.424s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.424s] -- Set runtime path of "/home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.424s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.425s] -- Set runtime path of "/home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.425s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.425s] -- Set runtime path of "/home/abdelrhaman/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages/composition_interfaces/composition_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.425s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_py.so
+[2.425s] -- Set runtime path of "/home/abdelrhaman/microros_ws/install/composition_interfaces/lib/libcomposition_interfaces__rosidl_generator_py.so" to ""
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode.idl
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes.idl
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode.idl
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode.srv
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode_Request.msg
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/LoadNode_Response.msg
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes.srv
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes_Request.msg
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/ListNodes_Response.msg
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode.srv
+[2.426s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode_Request.msg
+[2.427s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/srv/UnloadNode_Response.msg
+[2.427s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/ament_index/resource_index/package_run_dependencies/composition_interfaces
+[2.427s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/ament_index/resource_index/parent_prefix_path/composition_interfaces
+[2.427s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/ament_prefix_path.sh
+[2.427s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/ament_prefix_path.dsv
+[2.427s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/path.sh
+[2.427s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/environment/path.dsv
+[2.427s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/local_setup.bash
+[2.427s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/local_setup.sh
+[2.427s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/local_setup.zsh
+[2.427s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/local_setup.dsv
+[2.427s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/package.dsv
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/ament_index/resource_index/packages/composition_interfaces
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_cExport.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cExport.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_cppExport.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.428s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cppExport.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_pyExport.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/export_composition_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.429s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.429s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.430s] -- Installing: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.430s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfacesConfig.cmake
+[2.430s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/cmake/composition_interfacesConfig-version.cmake
+[2.430s] -- Up-to-date: /home/abdelrhaman/microros_ws/install/composition_interfaces/share/composition_interfaces/package.xml
+[2.431s] Invoked command in '/home/abdelrhaman/microros_ws/build/composition_interfaces' returned '0': AMENT_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces:/home/abdelrhaman/microros_ws/install/builtin_interfaces:/home/abdelrhaman/ros/install/my_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/lib:/home/abdelrhaman/microros_ws/install/builtin_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abdelrhaman/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/abdelrhaman/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/abdelrhaman/microros_ws/build/composition_interfaces
