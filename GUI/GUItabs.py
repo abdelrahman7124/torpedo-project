@@ -46,27 +46,22 @@ class UI(QMainWindow):
         self.frameLogs_Task2 = self.findChild(QTextEdit, "textEdit_LogsTask2")  
 
 
-        self.detectShapeButton = self.findChild(QPushButton, "detectShapeButton")
-        self.detectShapeButton.clicked.connect(self.detectShapes)  # Connect button to shape detection
+        #task 1 
+        self.Task1PushBt_AddPath = self.findChild(QPushButton, "ADD_path_lable")  
+        self.Task1PushBt_AddPath.clicked.connect(self.showTask2bouns)
 
-        self.Show_res_task2_bouns_push = self.findChild(QPushButton, "Show_res_task2_bouns_push")
-        self.Show_res_task2_bouns_push.clicked.connect(self.showTask2bouns)
+        self.Task1PushBt_Start = self.findChild(QPushButton, "Start_lable")  
+        self.Task1PushBt_Start.clicked.connect(self.showTask2bouns)
 
-
-
-        self.Set_st_task2_push = self.findChild(QPushButton, "Set_st_task2_push")
-        self.Set_st_task2_push.clicked.connect(self.SetStation_Shape)
-
-        self.Match_st_task2_push = self.findChild(QPushButton, "Match_st_task2_push")
-        self.Match_st_task2_push.clicked.connect(self.CheckStation_Shape)
-
-
-
-        self.MovePushBt_ = self.findChild(QPushButton, "Forward_PushB")  
-        self.MovePushBt_.clicked.connect(self.showTask2bouns)
+        self.Task1PushBt_Finish = self.findChild(QPushButton, "Finish_lable_2")  
+        self.Task1PushBt_Finish.clicked.connect(self.showTask2bouns)        
         
-        self.MovePushBt_Forward = self.findChild(QPushButton, "l_froward_PushB")  
+        #Control Buttons
+        self.MovePushBt_Forward= self.findChild(QPushButton, "Forward_PushB")  
         self.MovePushBt_Forward.clicked.connect(self.showTask2bouns)
+        
+        self.MovePushBt_L_Forward = self.findChild(QPushButton, "l_froward_PushB")  
+        self.MovePushBt_L_Forward.clicked.connect(self.showTask2bouns)
 
         self.MovePushBt_R_Forward = self.findChild(QPushButton, "R_Forward_PushB")
         self.MovePushBt_R_Forward.clicked.connect(self.showTask2bouns)  
@@ -90,8 +85,32 @@ class UI(QMainWindow):
         self.MovePushBt_STOP.clicked.connect(self.showTask2bouns)
 
 
+
+
+        #tab Task2 and 4 
+        self.Task2_4PushBt_detect_metal = self.findChild(QPushButton, "detect_metal_push")  
+        self.Task2_4PushBt_detect_metal.clicked.connect(self.showTask2bouns)
+
+        self.detectShapeButton = self.findChild(QPushButton, "detectShapeButton")
+        self.detectShapeButton.clicked.connect(self.detectShapes)  # Connect button to shape detection
+
+        self.Show_res_task2_bouns_push = self.findChild(QPushButton, "Show_res_task2_bouns_push")
+        self.Show_res_task2_bouns_push.clicked.connect(self.showTask2bouns)
+
+
+
+        self.Set_st_task2_push = self.findChild(QPushButton, "Set_st_task2_push")
+        self.Set_st_task2_push.clicked.connect(self.SetStation_Shape)
+
+        self.Match_st_task2_push = self.findChild(QPushButton, "Match_st_task2_push")
+        self.Match_st_task2_push.clicked.connect(self.CheckStation_Shape)
+
+
+
+
         self.cameraVideoimg_pross_Metal = self.findChild(QLabel, "Live_camera_videoLable2_Metal")  # For grayscale video
 
+        
 
 
 
@@ -139,7 +158,27 @@ class UI(QMainWindow):
 
 
     def showTask2bouns(self):
-        self.appendLog(
+       
+        log_text = (
+        "----------Shapes------------\n"
+        f"Number of Circles: {circle_count},\n"
+        f"Number of Squares: {square_count},\n"
+        f"Number of Triangles: {triangle_count}\n"
+        "----------Colors----------------\n"
+        f"Number of Red: {Red_count},\n"
+        f"Number of Green: {Green_count},\n"
+        f"Number of Blue: {Blue_count},\n"
+        f"Number of Yellow: {Yellow_count},\n"
+        f"Number of White: {White_count},\n"
+        f"Number of Black: {Black_count}\n"
+        "--------------------------------\n"
+        )
+        self.appendLog(log_text, self.frameLogs_Task2)
+        
+       
+       
+       
+        '''self.appendLog(
                 "----------Shapes------------\n"
                 f"Number of Circles: {circle_count},\n"
                 f"Number of Squares: {square_count},\n"
@@ -152,7 +191,7 @@ class UI(QMainWindow):
                 f"Number of White: {White_count},\n"
                 f"Number of Black: {Black_count}\n",
                 "--------------------------------\n",
-                self.frameLogs_Task2)
+                self.frameLogs_Task2)'''
         
     def SetStation_Shape(self):
         global Station_Shape, Cuurent_Shape
