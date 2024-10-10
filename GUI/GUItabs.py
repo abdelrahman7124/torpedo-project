@@ -10,10 +10,13 @@ from PyQt5 import uic
 import cv2
 from LineFollower import process_frame 
 from Shape_detect import process_shape_detection
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+from std_msgs.msg import Int32
 
 
-
-circle_count = 0
+circle_count= 0
 square_count = 0
 triangle_count = 0
 Red_count = 0
@@ -26,11 +29,14 @@ Station_Shape=""
 Cuurent_Shape=""
 
 
+
+
 class UI(QMainWindow):
     def __init__(self):
         super(UI, self).__init__()
         uic.loadUi("GUI_tabs.ui", self)
         self.show()
+
 
         # Find the QLabel objects for live video and grayscale video
         self.cameraVideo = self.findChild(QLabel, "Live_camera_videoLable")
@@ -55,6 +61,35 @@ class UI(QMainWindow):
         self.Match_st_task2_push.clicked.connect(self.CheckStation_Shape)
 
 
+
+        self.MovePushBt_ = self.findChild(QPushButton, "Forward_PushB")  
+        self.MovePushBt_.clicked.connect(self.showTask2bouns)
+        
+        self.MovePushBt_Forward = self.findChild(QPushButton, "l_froward_PushB")  
+        self.MovePushBt_Forward.clicked.connect(self.showTask2bouns)
+
+        self.MovePushBt_R_Forward = self.findChild(QPushButton, "R_Forward_PushB")
+        self.MovePushBt_R_Forward.clicked.connect(self.showTask2bouns)  
+
+        self.MovePushBt_Left = self.findChild(QPushButton, "Left_PushB")
+        self.MovePushBt_Left.clicked.connect(self.showTask2bouns)  
+
+        self.MovePushBt_Right = self.findChild(QPushButton, "Right_PushB")
+        self.MovePushBt_Right.clicked.connect(self.showTask2bouns)  
+
+        self.MovePushBt_L_back = self.findChild(QPushButton, "L_Back_PushB")
+        self.MovePushBt_L_back.clicked.connect(self.showTask2bouns)  
+
+        self.MovePushBt_Back= self.findChild(QPushButton, "Back_PushB")
+        self.MovePushBt_Back.clicked.connect(self.showTask2bouns)  
+
+        self.MovePushBt_R_back = self.findChild(QPushButton, "R_Back_PushB")
+        self.MovePushBt_R_back.clicked.connect(self.showTask2bouns)  
+#h
+        self.MovePushBt_STOP = self.findChild(QPushButton, "STOP_PushB")  
+        self.MovePushBt_STOP.clicked.connect(self.showTask2bouns)
+
+
         self.cameraVideoimg_pross_Metal = self.findChild(QLabel, "Live_camera_videoLable2_Metal")  # For grayscale video
 
 
@@ -64,7 +99,7 @@ class UI(QMainWindow):
         self.startVideoStream()
 
     def startVideoStream(self):
-        ip_camera_url = "http://192.168.1.4:8080/video"
+        ip_camera_url = "http://192.168.1.10:8080/video"
         self.capture = cv2.VideoCapture(ip_camera_url)
 
         self.timer = QTimer(self)

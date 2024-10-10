@@ -69,7 +69,7 @@ def detect_shape(contour):
         return "sq"
     elif len(approx) > 4:
         return "circle"
-    return "unknown"
+    #return "unknown"
 
 def detect_color_inside_shape(frame, contour):
     # Create a mask for the shape
