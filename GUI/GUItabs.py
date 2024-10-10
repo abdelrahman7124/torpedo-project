@@ -47,7 +47,7 @@ class UI(QMainWindow):
 
 
         #task 1 
-        self.Task1PushBt_AddPath = self.findChild(QPushButton, "ADD_path_lable")  
+        self.Task1PushBt_AddPath = self.findChild(QPushButton, "ADD_path_Push")  
         self.Task1PushBt_AddPath.clicked.connect(self.showTask2bouns)
 
         self.Task1PushBt_Start = self.findChild(QPushButton, "Start_lable")  
