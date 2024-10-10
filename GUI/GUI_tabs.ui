@@ -33,7 +33,7 @@
      <enum>QTabWidget::North</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="documentMode">
      <bool>false</bool>
@@ -201,7 +201,7 @@
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="ADD_path_lable">
+     <widget class="QPushButton" name="ADD_path_Push">
       <property name="geometry">
        <rect>
         <x>510</x>
